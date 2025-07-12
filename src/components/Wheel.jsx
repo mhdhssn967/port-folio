@@ -27,7 +27,7 @@ const Wheel = ({ scrollRef }) => {
       <img
         src={wh}
         alt="Wheel"
-        style={{ transform: `rotate(${rotation}deg) scale(${rotation/70})`,position:'fixed' }}
+        style={{transform: `rotate(${rotation}deg) scale(8)`}}
         className="wheel-img"
       />
     </div>
