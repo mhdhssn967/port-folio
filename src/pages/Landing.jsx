@@ -6,6 +6,8 @@ import Wheel from '../components/Wheel'
 import Experience from '../components/Experience'
 import SkillWheel from '../components/SkillWheel'
 import Social from '../components/Social'
+import Projects from '../components/Projects'
+
 
 
 const Landing = () => {
@@ -15,6 +17,7 @@ const Landing = () => {
 <SkillWheel scrollRef={scrollRef}/>
 {/* <h1 className='code-create' >Code. Create. Connect.</h1> */}
 <Social/>
+
  <div className="main-container">
         <div className="left-container" >
           <div className="profile-tab">
@@ -25,6 +28,8 @@ const Landing = () => {
         <div className="right-container" ref={scrollRef}>
           <AboutMe />
           <Experience/>
+          <Projects/>
+          <div className='extra'></div>
         </div>
       </div>
 

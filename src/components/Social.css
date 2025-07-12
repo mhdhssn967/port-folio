@@ -1,14 +1,22 @@
-.social-media-container{
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    gap: 10px;
-    z-index: 2500;
-    transform: translateX(-50%);
+.social-media-container {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2500;
+  transform: translateX(-50%);
+  
+  /* ✨ Glassy effect */
+  background: rgba(0, 0, 0, 0.4); /* translucent background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+  backdrop-filter: blur(10px); /* blur behind the div */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 52px;
+  padding: 20px 20px;
 }
+
 .social-media-container a{
     text-decoration: none;
     transition: 0.3s;
@@ -32,7 +40,7 @@
     gap: 10px;
 }
 .social-media-container a i:hover{
-    filter: drop-shadow(0px 0px 20px white);
+    filter: drop-shadow(0px 0px 10px white);
 }
 .social-media-container a:hover{
     transform: scale(1.2);

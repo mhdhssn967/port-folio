@@ -68,7 +68,7 @@ const SkillWheel = ({ scrollRef }) => {
 
     const onScroll = () => {
       const scrollTop = container.scrollTop;
-      setRotation(scrollTop * 0.2); // Adjust rotation speed
+      setRotation(scrollTop * 0.6); // Adjust rotation speed
     };
 
     container.addEventListener('scroll', onScroll);

@@ -1,0 +1,64 @@
+.projects-grid{
+    display: flex;
+    gap: 10px;
+}
+.project-card{
+    background-color: #292929;
+    padding: 10px;
+    flex: 1;
+    border-radius: 10px;
+    width: 300px;
+}
+.project-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-image img{
+    border-radius: 10px;
+    filter: brightness(0.7);
+}
+.project-card{
+    display: none;
+    transform: rotateY(180deg);
+}
+.project-container:hover .project-card{
+    display: block;
+}
+.project-container:hover .project-image{
+    display: none;
+}
+.project-container:hover {
+  transform: rotateY(180deg);
+}
+.project-container{
+    transition: 0.3s;
+    background-color: #292929;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.project-card a:hover{
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+.project-card a{
+    text-decoration: none;
+    color: rgb(0, 132, 255);
+}
+.project-card a i{
+    color:rgb(0, 132, 255);
+}
+.git-projects-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.git-project-card{
+    background-color: #292929;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px rgb(75, 75, 75);
+}
+.git-project-card:hover{
+    transform: scale(1.1);
+}

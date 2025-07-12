@@ -17,14 +17,18 @@
 }
 .right-container{
     padding: 50px;
-    height: 70vh;
+    height: 100vh;
     overflow-y: scroll;
     scrollbar-width: none;       /* Firefox */
   -ms-overflow-style: none; 
   z-index: 1200;
+  overflow-x: hidden;
 }
 .right-container::-webkit-scrollbar {
   display: none;               /* Chrome, Safari, Opera */
+}
+.extra{
+    height: 250px;
 }
 
 @media (min-width:600px) and (max-width:1200px){
