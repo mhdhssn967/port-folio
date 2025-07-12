@@ -1,0 +1,51 @@
+/* Container at top-left with hidden overflow */
+.corner-slice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 460px;         /* Visible area width */
+  height: 560px;        /* Visible area height */
+  overflow: hidden;
+  z-index: 1000;
+  pointer-events: none; /* Optional: ignore mouse events */
+}
+
+/* The full circular wheel */
+.skill-wheel {
+  position: absolute;
+  top: -90px;            /* Shift up to center ring inside corner */
+  left: -90px;           /* Shift left */
+  width: 300px;
+  height: 300px;
+  transform-origin: 50% 50%;
+  transition: transform 0.1s linear;
+}
+
+/* Each icon positioned around the ring */
+.tool-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.tool-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.wheel-center-text {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.wheel-center-text h3 {
+  font-size: 18px;
+  text-align: center;
+  color: #969595;
+  /* background: rgba(255, 255, 255, 0.8); */
+  padding: 4px 12px;
+  border-radius: 8px;
+}

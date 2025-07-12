@@ -1,0 +1,50 @@
+.profile-tab {
+  position: fixed;
+  top: 25%;
+  left: 20%;
+  transform: translateY(-50%);
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    z-index: 1000;
+}
+.left-container{
+    z-index: 1500;
+}
+.right-container{
+    padding: 50px;
+    height: 70vh;
+    overflow-y: scroll;
+    scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none; 
+  z-index: 1200;
+}
+.right-container::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari, Opera */
+}
+
+@media (min-width:600px) and (max-width:1200px){
+    .profile-tab{
+        left: 5%;
+    }
+}
+@media (max-width:900px){
+    .profile-tab{
+        position: absolute;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.code-create{
+    text-align: right;
+    font-size: 80px;
+    margin: 0px;
+    font-family: "Bitcount Grid Double", system-ui;
+    font-weight: 200;
+}

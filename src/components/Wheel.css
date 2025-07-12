@@ -1,0 +1,7 @@
+.wheel-container img{
+    width: 200px;
+    position: fixed;
+    /* bottom: 50px; */
+    left: 20px;
+    opacity: 0.08;
+}

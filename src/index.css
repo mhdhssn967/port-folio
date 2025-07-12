@@ -1,0 +1,13 @@
+body{
+  background-color: rgb(26, 26, 26);
+  height: 100vh;
+  overflow-y: hidden;
+}
+*{
+font-family: "Lexend", sans-serif;
+color: rgb(211, 211, 211);
+}
+:root{
+  --primary-color:#22719e;
+  --secondary-color:rgb(107, 107, 107);
+}
