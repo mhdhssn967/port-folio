@@ -26,7 +26,7 @@ const Landing = () => {
           <div className='skill-pc'><SkillWheel scrollRef={scrollRef}/></div>
           <div className='skill-mob'><ScrollingTechBar mobScrollRef={mobScrollRef}/></div>
           <div className="profile-tab">
-            <Profile />
+            <Profile mobScrollRef={mobScrollRef}/>
             
           </div>
         </div>

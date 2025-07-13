@@ -67,4 +67,8 @@
     .git-project-card{
         flex: 1;
     }
+    .projects-grid{
+      display: flex;
+      justify-content: center;
+    }
 }

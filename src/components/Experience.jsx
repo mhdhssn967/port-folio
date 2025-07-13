@@ -3,6 +3,13 @@ import './Experience.css'
 
 const Experience = () => {
     const experience = [
+       {
+    role: "Full Stack Developer",
+    company: "Oqulix Pvt Ltd",
+    duration: "Mar 2020 – May 2021",
+    icon: "https://www.oqulix.com/agency-hotspot/images/logo.png",
+    description: "Managed educational content during the COVID-19 pandemic, assisting teachers and students in transitioning to online learning."
+  },
   {
     role: "MERN Stack Intern",
     company: "Luminar Technolabs",
@@ -38,7 +45,8 @@ const Experience = () => {
     duration: "Mar 2020 – May 2021",
     icon: "https://play-lh.googleusercontent.com/54y3MukmblodujCdZEkm0ZtJ45DabMhhdJU1xlQJNBWpdkNqVdacjjU_EWnnsi6-EYri",
     description: "Managed educational content during the COVID-19 pandemic, assisting teachers and students in transitioning to online learning."
-  }
+  },
+ 
 ];
 
   return (

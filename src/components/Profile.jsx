@@ -1,44 +1,59 @@
-import React from 'react'
-import './Profile.css'
-import proimage from '../assets/face.png'
+import React, { useEffect, useState } from 'react';
+import './Profile.css';
+import proimage from '../assets/face.png';
 
-const Profile = () => {
+const Profile = ({ mobScrollRef }) => {
+  const [scale, setScale] = useState(1);
+  const [opacity, setOpacity] = useState(1);
+
+  useEffect(() => {
+    const container = mobScrollRef?.current;
+    if (!container) return;
+
+    const handleScroll = () => {
+      const scrollTop = container.scrollTop;
+
+      // Shrinks to as low as 0.2
+      const newScale = Math.max(0.2, 1 - scrollTop / 400);
+      const newOpacity = Math.max(0, 1 - scrollTop / 300); // Fades out completely
+
+      setScale(newScale);
+      setOpacity(newOpacity);
+    };
+
+    container.addEventListener('scroll', handleScroll);
+    return () => container.removeEventListener('scroll', handleScroll);
+  }, [mobScrollRef]);
+
   return (
-    <>
-    <div className='profile-container' >
-        <img src={proimage} alt="" />
-       
-            
+    <div
+      className="profile-container"
+      style={{
+        transform: `scale(${scale})`,
+        opacity: opacity,
+        transition: 'transform 0.2s ease-out, opacity 0.2s ease-out',
+      }}
+    >
+      <img src={proimage} alt="" />
 
-        <div className='det-container'>
- <h2 style={{textWrap:'nowrap'}}>Mohammed Hussain</h2>
+      <div className="det-container">
+        <h2 style={{ textWrap: 'nowrap' }}>Mohammed Hussain</h2>
+        <h3>Passionate about code, design, and problem-solving.</h3>
 
- <h3>Passionate about code, design, and problem-solving.</h3>
- {/* <div className='social'>
-    <a href='https://github.com/mhdhssn967'><i title='github' class="ri-github-fill"></i></a>
-    <a href='www.linkedin.com/in/mhdhssn'><i title='linked-in' class="ri-linkedin-box-fill"></i></a>
-    <a href='https://www.instagram.com/hxn._____?igsh=MTk5djR1dzV2eXg0OA=='><i title='instagram' class="ri-instagram-fill"></i></a>
- </div> */}
- <div className='details'>
-    <ul>
-        <li><i class="ri-phone-fill"></i> 7025 70 7936</li>
-        <li><i class="ri-mail-fill"></i> mhdhssn967@gmail.com</li>
-        <li><i class="ri-map-pin-fill"></i> Palakkad, Kerala</li>
-    </ul>
-
- </div>
-     <a
-  href="mailto:mhdhssn967@gmail.com"
-  className="contact-button"
->
-  <i class="ri-discuss-line"></i> Lets Talk
-</a>
+        <div className="details">
+          <ul>
+            <li><i className="ri-phone-fill"></i> 7025 70 7936</li>
+            <li><i className="ri-mail-fill"></i> mhdhssn967@gmail.com</li>
+            <li><i className="ri-map-pin-fill"></i> Palakkad, Kerala</li>
+          </ul>
         </div>
-        
+
+        <a href="mailto:mhdhssn967@gmail.com" className="contact-button">
+          <i className="ri-discuss-line"></i> Let's Talk
+        </a>
+      </div>
     </div>
+  );
+};
 
-    </>
-  )
-}
-
-export default Profile
+export default Profile;
