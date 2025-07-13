@@ -54,7 +54,7 @@ const AboutMe = () => {
     </div> */}
 
 <h2>Education</h2>
-<div class="education">
+<div class="education" >
   <p><i class="ri-school-line"></i> <strong>Schooling – Assisi EMHSS (2018)</strong><br />
     <ul><li>SSLC with full A+</li>  <li>Red Cross member</li>  <li>Selected for Govt. Programming Upliftment Program.</li></ul>
   </p>

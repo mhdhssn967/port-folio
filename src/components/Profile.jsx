@@ -27,7 +27,7 @@ const Profile = ({ mobScrollRef }) => {
 
   return (
     <div
-      className="profile-container"
+      className="profile-container" 
       style={{
         transform: `scale(${scale})`,
         opacity: opacity,
