@@ -37,7 +37,7 @@ const Profile = ({ mobScrollRef }) => {
       <img src={proimage} alt="" />
 
       <div className="det-container">
-        <h2 style={{ textWrap: 'nowrap' }}>Mohammed Hussain A</h2>
+        <h2 style={{ textWrap: 'nowrap' }}>Mohammed Hussain</h2>
         <h3>Passionate about code, design, and problem-solving.</h3>
 
         <div className="details">
