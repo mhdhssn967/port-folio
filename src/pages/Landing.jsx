@@ -32,7 +32,7 @@ const Landing = () => {
         </div>
 
         <div className="right-container" ref={scrollRef}>
-          <AboutMe />
+          <AboutMe mobScrollRef={mobScrollRef}/>
           <Experience/>
           <Projects/>
           <div className='extra'></div>
