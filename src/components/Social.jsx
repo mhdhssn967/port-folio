@@ -14,7 +14,7 @@ const Social = () => {
 
     <div>
         
-        <a href='www.linkedin.com/in/mhdhssn' target='blank'><i title='linked-in' class="ri-linkedin-box-fill" ></i></a>
+        <a href='https://www.linkedin.com/in/mhdhssn/' target='blank'><i title='linked-in' class="ri-linkedin-box-fill" ></i></a>
                 <div className='social-line'></div>
     </div>
 
