@@ -13,7 +13,7 @@
     /* position: fixed; */
     border: solid 1px rgb(82, 82, 82);
     z-index: 1200;
-
+  cursor: pointer;
 }
 .profile-container img{
     width: 250px;
