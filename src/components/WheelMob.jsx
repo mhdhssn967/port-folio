@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react';
 import wh from '../assets/wheel.png';
 import './Wheel.css';
 
-const Wheel = ({ scrollRef }) => {
+const WheelMob = ({ mobScrollRef }) => {
   const [rotation, setRotation] = useState(0);
 
   useEffect(() => {
-    const container = scrollRef.current;
+    const container = mobScrollRef.current;
 
     if (!container) return;
 
     const handleScroll = () => {
       const scrollTop = container.scrollTop;
-      setRotation(scrollTop / 10); // Control speed of rotation here
+      setRotation(scrollTop / 1); // Control speed of rotation here
     };
 
     container.addEventListener('scroll', handleScroll);
@@ -20,7 +20,7 @@ const Wheel = ({ scrollRef }) => {
     return () => {
       container.removeEventListener('scroll', handleScroll);
     };
-  }, [scrollRef]);
+  }, [mobScrollRef]);
 
   return (
     <div className="wheel-container">
@@ -34,4 +34,4 @@ const Wheel = ({ scrollRef }) => {
   );
 };
 
-export default Wheel;
+export default WheelMob;

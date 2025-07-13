@@ -27,8 +27,16 @@ const Profile = () => {
     </ul>
 
  </div>
+     <a
+  href="mailto:mhdhssn967@gmail.com"
+  className="contact-button"
+>
+  <i class="ri-discuss-line"></i> Lets Talk
+</a>
         </div>
+        
     </div>
+
     </>
   )
 }

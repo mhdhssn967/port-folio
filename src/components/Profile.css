@@ -65,20 +65,56 @@
     align-items: start;
     margin-left: -20px;
 }
+.contact-button {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 12px 0px;
+  border-radius: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.contact-button:hover {
+  background: #5e5e5e;
+}
+
 @media (max-width: 600px) {
   @media (max-width: 600px) {
   .profile-container {
     position: static;
-    width: 90%;
-    max-width: none;
+    width: 80%;
+    max-width: 90vw;
     margin: 20px auto;
     border-radius: 15px;
     padding: 20px;
     margin-top: 80px;
+    filter: none;
+    background:none;
+    border: none;
   }
 
   .profile-container img {
     width: 100%;
+  }
+  .details ul{
+    align-items: center;
+  }
+  .details ul li{
+    color: white;
+  }
+  .det-container h3{
+    color: white;
+  }
+  .profile-container img{
+    filter: drop-shadow(0px 0px 1px white);
+  }
+  .contact-button{
+    width: auto;
+    padding: 12px 24px;
   }
 }
 

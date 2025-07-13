@@ -3,5 +3,10 @@
     position: fixed;
     /* bottom: 50px; */
     left: 20px;
-    opacity: 0.08;
+    opacity: 0.3;
+}
+@media (max-width:600px){
+    .wheel-container{
+        opacity: 0.3;
+    }
 }

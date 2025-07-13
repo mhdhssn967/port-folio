@@ -8,6 +8,7 @@ import SkillWheel from '../components/SkillWheel'
 import Social from '../components/Social'
 import Projects from '../components/Projects'
 import ScrollingTechBar from '../components/ScrollingTechBar'
+import WheelMob from '../components/WheelMob'
 
 
 
@@ -26,6 +27,7 @@ const Landing = () => {
           <div className='skill-mob'><ScrollingTechBar mobScrollRef={mobScrollRef}/></div>
           <div className="profile-tab">
             <Profile />
+            
           </div>
         </div>
 
@@ -37,7 +39,8 @@ const Landing = () => {
         </div>
       </div>
 
-      <Wheel scrollRef={scrollRef} />
+      <div className='skill-pc'><Wheel scrollRef={scrollRef} /></div>
+      <div className='skill-mob'><WheelMob mobScrollRef={mobScrollRef }/></div>
       
 
 </>
