@@ -1,7 +1,7 @@
 
 .main-container{
     display: grid;
-    grid-template-columns: 30% 60%;
+    grid-template-columns: 450px 300px 1fr;
     justify-content: center;
     /* align-items: center; */
     height: 100vh;
@@ -9,6 +9,8 @@
 }
 .left-container{
     z-index: 1500;
+    display: flex;
+    align-items: center;
 }
 .right-container{
     padding: 50px;

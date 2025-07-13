@@ -22,8 +22,9 @@ const Landing = () => {
 <Social/>
 
  <div className="main-container" ref={mobScrollRef}>
+  <div className='skill-pc'><SkillWheel scrollRef={scrollRef}/></div>
         <div className="left-container" >
-          <div className='skill-pc'><SkillWheel scrollRef={scrollRef}/></div>
+          
           <div className='skill-mob'><ScrollingTechBar mobScrollRef={mobScrollRef}/></div>
           <div className="profile-tab">
             <Profile mobScrollRef={mobScrollRef}/>

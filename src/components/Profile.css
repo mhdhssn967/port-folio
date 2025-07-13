@@ -10,11 +10,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: fixed;
+    /* position: fixed; */
     border: solid 1px rgb(82, 82, 82);
     z-index: 1200;
-    left: 20%;
-    top: 25%;
+
 }
 .profile-container img{
     width: 250px;
