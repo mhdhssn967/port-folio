@@ -38,7 +38,7 @@
 }
 .main-point p{
     font-size: 25px;
-    color: rgb(97, 97, 97);
+    color: rgb(218, 218, 218);
 }
 .what-i-do-cards{
     display: flex;
@@ -92,4 +92,5 @@
   .education{
     flex-direction: column;
   }
+
 }

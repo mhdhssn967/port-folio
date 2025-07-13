@@ -1,36 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './AboutMe.css'
 
 
-const AboutMe = ({mobScrollRef}) => {
-   const [scale, setScale] = useState(0.1);
-    const [opacity, setOpacity] = useState(1);
-  
-    useEffect(() => {
-      const container = mobScrollRef?.current;
-      if (!container) return;
-  
-      const handleScroll = () => {
-        const scrollTop = container.scrollTop;
-  
-        // Shrinks to as low as 0.2
-        const newScale = Math.max(0.2, 0.1 + scrollTop / 700);
-        const newOpacity = Math.max(0, 1 - scrollTop / 1800); // Fades out completely
-  
-        setScale(newScale);
-        setOpacity(newOpacity);
-      };
-  
-      container.addEventListener('scroll', handleScroll);
-      return () => container.removeEventListener('scroll', handleScroll);
-    }, [mobScrollRef]);
+const AboutMe = () => {
   return (
     <>
-    <div className='main-point' style={{
-        transform: `scale(${scale})`,
-        opacity: opacity,
-        transition: 'transform 0.2s ease-out, opacity 0.2s ease-out',
-      }}>
+    <div className='main-point' >
         <h1 className='main-head' >SOFTWARE  <span>ENGINEER</span></h1>
         <p>Driven by a passion for blending design and technology to build impactful digital experiences. I specialize in turning concepts into functional, visually compelling solutions.</p>
     </div>
