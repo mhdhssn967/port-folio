@@ -4,6 +4,10 @@
     border-radius: 15px;
     padding: 10px;
 }
+.main-head{
+  font-size: 80px;
+  text-wrap: nowrap;
+}
 .about-me{
     display: grid;
     grid-template-columns: 320px 320px;
@@ -69,4 +73,23 @@
   font-size: 32px;
   color: #007bff;
   margin-bottom: 10px;
+}
+@media (max-width:600px) {
+  .main-head{
+    font-size: 55px;
+    text-wrap: wrap;
+  }
+  .what-i-do-section{
+    padding: 10px;
+  }
+  .what-i-do-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card{
+    width: auto;
+  }
+  .education{
+    flex-direction: column;
+  }
 }

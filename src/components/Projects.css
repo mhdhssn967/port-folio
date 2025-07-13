@@ -1,5 +1,6 @@
 .projects-grid{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 .project-card{
@@ -61,4 +62,9 @@
 }
 .git-project-card:hover{
     transform: scale(1.1);
+}
+@media (max-width:600px) {
+    .git-project-card{
+        flex: 1;
+    }
 }

@@ -1,9 +1,4 @@
-.profile-tab {
-  position: fixed;
-  top: 25%;
-  left: 20%;
-  transform: translateY(-50%);
-}
+
 .main-container{
     display: grid;
     grid-template-columns: 30% 60%;
@@ -30,25 +25,34 @@
 .extra{
     height: 250px;
 }
+.skill-mob{
+    display: none;
+}
 
-@media (min-width:600px) and (max-width:1200px){
-    .profile-tab{
-        left: 5%;
-    }
-}
-@media (max-width:900px){
-    .profile-tab{
-        position: absolute;
-    }
-    .main-container{
-        display: flex;
-        flex-direction: column;
-    }
-}
 .code-create{
     text-align: right;
     font-size: 80px;
     margin: 0px;
     font-family: "Bitcount Grid Double", system-ui;
     font-weight: 200;
+}
+@media (max-width:600px) {
+    .right-container{
+        height: fit-content;
+        overflow-y: auto;
+        padding: 10px;
+    }
+    .main-container{
+        grid-template-columns: auto;
+        overflow-y: scroll;
+    }
+    .extra{
+        height: 100px;
+    }
+    .skill-mob{
+        display: block;
+    }
+    .skill-pc{
+        display: none;
+    }
 }

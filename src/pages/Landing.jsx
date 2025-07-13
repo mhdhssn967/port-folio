@@ -7,19 +7,23 @@ import Experience from '../components/Experience'
 import SkillWheel from '../components/SkillWheel'
 import Social from '../components/Social'
 import Projects from '../components/Projects'
+import ScrollingTechBar from '../components/ScrollingTechBar'
 
 
 
 const Landing = () => {
      const scrollRef = useRef(null);
+     const mobScrollRef=useRef(null)
   return (
     <>
-<SkillWheel scrollRef={scrollRef}/>
+
 {/* <h1 className='code-create' >Code. Create. Connect.</h1> */}
 <Social/>
 
- <div className="main-container">
+ <div className="main-container" ref={mobScrollRef}>
         <div className="left-container" >
+          <div className='skill-pc'><SkillWheel scrollRef={scrollRef}/></div>
+          <div className='skill-mob'><ScrollingTechBar mobScrollRef={mobScrollRef}/></div>
           <div className="profile-tab">
             <Profile />
           </div>

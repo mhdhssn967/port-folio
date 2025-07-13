@@ -6,7 +6,7 @@
   width: 460px;         /* Visible area width */
   height: 560px;        /* Visible area height */
   overflow: hidden;
-  z-index: 1000;
+  z-index: 00;
   pointer-events: none; /* Optional: ignore mouse events */
 }
 

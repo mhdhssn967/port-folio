@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <>
     <div className='main-point' >
-        <h1 className='main-head' style={{fontSize:'90px',width:'120%',margin:'0px'}} >SOFTWARE  <span>ENGINEER</span></h1>
+        <h1 className='main-head' >SOFTWARE  <span>ENGINEER</span></h1>
         <p>Driven by a passion for blending design and technology to build impactful digital experiences. I specialize in turning concepts into functional, visually compelling solutions.</p>
     </div>
     <div className="what-i-do-section" >

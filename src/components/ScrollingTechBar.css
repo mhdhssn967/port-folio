@@ -1,0 +1,28 @@
+.scrolling-tech-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(6px);
+  overflow: hidden;
+  height: 60px;
+  z-index: 2000;
+  border-bottom: 1px solid #333;
+}
+
+.tech-icons-track {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  white-space: nowrap;
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+.tech-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: brightness(0.9);
+}
