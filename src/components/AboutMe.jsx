@@ -57,16 +57,18 @@ const AboutMe = () => {
 
 <h2>Education</h2>
 <div class="education" >
-  <p><i class="ri-school-line"></i> <strong>Schooling – Assisi EMHSS (2018)</strong><br />
-    <ul><li>SSLC with full A+</li>  <li>Red Cross member</li>  <li>Selected for Govt. Programming Upliftment Program.</li></ul>
+  
+<p><i class="ri-building-line"></i> <strong>B.Tech – JCET (2020–2024)</strong><br />
+    <ul><li>Computer Science & Engineering graduate</li>  <li>Led tech and cultural events</li>  <li>President, Xmeron</li>  <li>Media Club Lead.</li></ul>
   </p>
-
   <p><i class="ri-graduation-cap-line"></i> <strong>Higher Secondary – Assisi EMHSS (2018–2020)</strong><br />
     <ul><li>School Leader</li>  <li>State Scratch Programming Winner</li> <li>Student of the Year.</li></ul>
   </p>
 
-  <p><i class="ri-building-line"></i> <strong>B.Tech – JCET (2020–2024)</strong><br />
-    <ul><li>Computer Science & Engineering graduate</li>  <li>Led tech and cultural events</li>  <li>President, Xmeron</li>  <li>Media Club Lead.</li></ul>
+  
+
+  <p><i class="ri-school-line"></i> <strong>Schooling – Assisi EMHSS (2018)</strong><br />
+    <ul><li>SSLC with full A+</li>  <li>Red Cross member</li>  <li>Selected for Govt. Programming Upliftment Program.</li></ul>
   </p>
 </div>
 
