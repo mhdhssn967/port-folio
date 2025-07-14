@@ -48,10 +48,19 @@ const Profile = ({ mobScrollRef }) => {
           </ul>
         </div>
 
-        <a href="mailto:mhdhssn967@gmail.com" className="contact-button">
-          <i className="ri-discuss-line"></i> Let's Talk
-        </a>
+       <div className='btns'>
+          <a href="mailto:mhdhssn967@gmail.com" className="contact-button">
+            <i className="ri-discuss-line"></i> Let's Talk
+          </a>
+<a href="/Mohammed_Hussain_Resume.pdf" download className='contact-button resume-btn'>
+
+    <i className="ri-download-line"></i> Resume
+
+</a>
+  
+       </div>
       </div>
+      
     </div>
   );
 };

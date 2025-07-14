@@ -123,3 +123,16 @@
 }
 
 }
+.resume-btn{
+  background-color: white;
+  border: none;
+  color: black;
+}
+.btns{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.resume-btn i{
+  color: black;
+}
