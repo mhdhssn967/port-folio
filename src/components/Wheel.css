@@ -7,6 +7,6 @@
 }
 @media (max-width:600px){
     .wheel-container{
-        opacity: 0.8;
+        opacity: 1;
     }
 }
