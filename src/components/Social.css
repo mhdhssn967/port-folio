@@ -15,6 +15,7 @@
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   border-radius: 52px;
   padding: 15px;
+  cursor: pointer;
 }
 
 .social-media-container a{
