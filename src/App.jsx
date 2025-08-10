@@ -1,17 +1,42 @@
-import React, { useEffect } from 'react'
-import Landing from './pages/Landing'
-import MouseTrail from './components/MouseTrail'
-
+import React, { useState, useEffect } from 'react';
+import Landing from './pages/Landing';
+import MouseTrail from './components/MouseTrail';
+import Loader from './components/Preloader';
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+  const handleLoad = () => {
+    // Force loader to stay for at least 2 seconds
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  };
+
+  if (document.readyState === "complete") {
+    handleLoad();
+  } else {
+    window.addEventListener("load", handleLoad);
+  }
+
+  return () => {
+    window.removeEventListener("load", handleLoad);
+  };
+}, []);
 
   return (
-    <div>
-      <MouseTrail/>
-      <Landing/>
-    </div>
-  )
-}
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div>
+          <MouseTrail />
+          <Landing />
+        </div>
+      )}
+    </>
+  );
+};
 
-export default App
+export default App;
