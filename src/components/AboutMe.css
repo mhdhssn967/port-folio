@@ -3,6 +3,8 @@
     width: 300px;
     border-radius: 15px;
     padding: 10px;
+
+    
 }
 .main-head{
   font-size: 3vw;
@@ -19,6 +21,14 @@
     padding: 10px;
         border: solid 1px rgb(59, 59, 59);
         flex:1;
+
+        background: rgba(0, 0, 0, 0.4); /* translucent background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+  backdrop-filter: blur(10px); /* blur behind the div */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 12px;
+  padding: 15px;
+  cursor: pointer;
 }
 .education p strong{
     display: inline-block;
@@ -26,6 +36,7 @@
 }
 .education{
     display: flex;
+    flex-direction: column;
     gap: 10px;
     flex-wrap: wrap;
 }
@@ -57,13 +68,21 @@
 }
 
 .card {
-  background-color: #292929;
   border-radius: 12px;
   padding: 15px;
-  width: 200px;
+  width: 200px ;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.2s;
   flex: 1;
+
+    /* ✨ Glassy effect */
+  background: rgba(0, 0, 0, 0.4); /* translucent background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+  backdrop-filter: blur(10px); /* blur behind the div */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 12px;
+  padding: 15px;
+  cursor: pointer;
 }
 
 .card:hover {

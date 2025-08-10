@@ -4,9 +4,19 @@
     /* bottom: 50px; */
     left: 20px;
     opacity: 0.2;
+    animation: openWheel 2.2s;
 }
+
 @media (max-width:600px){
     .wheel-container img{
         opacity: 0.3;
+    }
+}
+@keyframes openWheel{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.2;
     }
 }

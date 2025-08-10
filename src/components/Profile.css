@@ -14,6 +14,14 @@
     border: solid 1px rgb(82, 82, 82);
     z-index: 1200;
   cursor: pointer;
+
+  background: rgba(0, 0, 0, 0.2); /* translucent background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+  backdrop-filter: blur(2px); /* blur behind the div */
+  -webkit-backdrop-filter: blur(2px); /* Safari support */
+  /* border-radius: 12px; */
+  /* padding: 15px; */
+  cursor: pointer;
 }
 .profile-container img{
     width: 250px;

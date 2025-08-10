@@ -59,6 +59,14 @@
     padding: 10px;
     border-radius: 10px;
     border: solid 1px rgb(75, 75, 75);
+
+    background: rgba(0, 0, 0, 0.4); /* translucent background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+  backdrop-filter: blur(10px); /* blur behind the div */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 12px;
+  padding: 15px;
+  cursor: pointer;
 }
 .git-project-card:hover{
     transform: scale(1.1);

@@ -23,14 +23,19 @@ const Wheel = ({ scrollRef }) => {
   }, [scrollRef]);
 
   return (
-    <div className="wheel-container">
-      <img
-        src={wh}
-        alt="Wheel"
-        style={{transform: `rotate(${rotation}deg) scale(8)`}}
-        className="wheel-img"
-      />
-    </div>
+    <>
+      <div className="wheel-container">
+        <img
+          src={wh}
+          alt="Wheel"
+          style={{transform: `rotate(${rotation}deg) scale(8)`}}
+          className="wheel-img"
+        />
+      </div>
+
+      
+    </>
+    
   );
 };
 
