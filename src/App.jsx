@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Landing from './pages/Landing';
 import MouseTrail from './components/MouseTrail';
 import Loader from './components/Preloader';
+import './App.css'
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -27,14 +28,13 @@ const App = () => {
 
   return (
     <>
-      {loading ? (
-        <Loader />
-      ) : (
+      {loading && 
+        <div className='loder'><Loader /></div>
+      }
         <div>
           <MouseTrail />
           <Landing />
         </div>
-      )}
     </>
   );
 };
