@@ -80,3 +80,28 @@
       justify-content: center;
     }
 }
+.play-game{
+    margin: 20px;
+    background-color: yellow;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: none;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+    filter: drop-shadow(3px 5px 0px rgb(156, 156, 17));
+    transition: 0.2s;
+}
+.play-game:active{
+    filter: none;
+    transform: translateX(3px) translateY(5px);
+}
+.game img{
+    margin: 10px;
+    border-radius: 20px;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

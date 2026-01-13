@@ -34,9 +34,9 @@ const Profile = ({ mobScrollRef }) => {
         transition: 'transform 0.2s ease-out, opacity 0.2s ease-out',
       }}
     >
-      <img src={proimage} alt="" />
+      <img src={proimage} alt=""  />
 
-      <div className="det-container">
+      <div className="det-container ">
         <h2 style={{ textWrap: 'nowrap' }}>Mohammed Hussain</h2>
         <h3>Passionate about code, design, and problem-solving.</h3>
 
@@ -52,7 +52,7 @@ const Profile = ({ mobScrollRef }) => {
           <a href="mailto:mhdhssn967@gmail.com" className="contact-button">
             <i className="ri-discuss-line"></i> Let's Talk
           </a>
-<a href="/Mohammed_Hussain_Resume.pdf" download className='contact-button resume-btn'>
+<a href="/Mohammed-Hussain-A-Resume.pdf" download className='contact-button resume-btn'>
 
     <i className="ri-download-line"></i> Resume
 

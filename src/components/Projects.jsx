@@ -64,6 +64,10 @@ const allowedRepos = ['bmi-calculator', 'enchantedEmporium', 'figmatemplate','me
             ))}
           </div>
         </section>
+        <div className='game'>
+          <img src="./game-bg.png" alt="" />
+          <button className='play-game'><a style={{textDecoration:'none',color:'black'}} href="https://runner-jet.vercel.app/" target='_blank'>Play Game</a></button>
+        </div>
         <section>
       <h2>GitHub Projects</h2>
       <div className="git-projects-grid">
